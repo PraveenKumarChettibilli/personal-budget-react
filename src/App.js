@@ -3,7 +3,7 @@ import './App.css';
 
 import { 
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route
 } from 'react-router-dom';
 
@@ -16,21 +16,15 @@ import LoginPage from './LoginPage/LoginPage';
 
 function App() {
   return (
-    <Router>
+    <Router className="App">
       <Menu/>
       <Hero/>
-      <div className="mainContainer">
-        <Switch>
-          <Route path="/about">
-            <AboutPage/>
-          </Route>
-          <Route path="/login">
-            <LoginPage/>
-          </Route>
-          <Route path="/">
-            <HomePage/>
-          </Route>
-        </Switch>
+      <div className="main Container">
+        <Routes>
+          <Route path="/About" element={<AboutPage/>}/>
+          <Route path="/Login" element={<LoginPage/>}/>
+          <Route path="/" element={<HomePage/>} />
+        </Routes>
       </div>
       <Footer/>
     </Router>

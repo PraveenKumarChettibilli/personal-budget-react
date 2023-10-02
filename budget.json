@@ -1,0 +1,28 @@
+{
+    "myBudget":[
+    {
+        "title":"Electricity",
+        "budget": 50
+    },
+    {
+        "title":"Rent",
+        "budget": 100
+    },
+    {
+        "title":"Groceries",
+        "budget": 100
+    },
+    {
+        "title":"Medical",
+        "budget": 150
+    },
+    {
+        "title":"Insurance",
+        "budget": 75
+    },
+    {
+        "title":"Travel",
+        "budget": 50
+    }
+]
+}
